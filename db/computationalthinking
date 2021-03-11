@@ -1,0 +1,101 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 80022
+Source Host           : localhost:3306
+Source Database       : computationalthinking
+
+Target Server Type    : MYSQL
+Target Server Version : 80022
+File Encoding         : 65001
+
+Date: 2021-03-11 09:40:15
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for achieve
+-- ----------------------------
+DROP TABLE IF EXISTS `achieve`;
+CREATE TABLE `achieve` (
+  `id` int NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `hot` int NOT NULL,
+  `participant_member` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `sort` int NOT NULL,
+  `achieve_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- ----------------------------
+-- Records of achieve
+-- ----------------------------
+INSERT INTO `achieve` VALUES ('1', '真实世界设计挑战赛（RWDC）', 'RWDC是一项年度竞赛，为9-12年级的高中学生提供了将课堂课程应用于工作场所面临的技术问题的机会。学生将使用专业的工程软件来开发解决方案，还将生成演示文稿来证明解决方案的价值，', '2021-03-02 22:18:24', '1', '小小小、大大大', '1', '相关赛事');
+INSERT INTO `achieve` VALUES ('2', '成果一号', '我是成果一号', '2021-03-02 22:17:52', '1', '暂无', '0', '成果一号');
+
+-- ----------------------------
+-- Table structure for manager
+-- ----------------------------
+DROP TABLE IF EXISTS `manager`;
+CREATE TABLE `manager` (
+  `id` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- ----------------------------
+-- Records of manager
+-- ----------------------------
+INSERT INTO `manager` VALUES ('1', '123');
+INSERT INTO `manager` VALUES ('admin', 'admin');
+
+-- ----------------------------
+-- Table structure for member
+-- ----------------------------
+DROP TABLE IF EXISTS `member`;
+CREATE TABLE `member` (
+  `id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `identity` int NOT NULL,
+  `content` text NOT NULL,
+  `tel` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `area` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- ----------------------------
+-- Records of member
+-- ----------------------------
+INSERT INTO `member` VALUES ('1', '倪伟', '1', '简介：截至2019.10，主持重庆市级、校级及横向课题18项，著有国内首套计算思维绘本，完成软著10余项，发表论文20余篇，编写教材6部，主讲的高校素质课程-计算思维曾获第十八届全国教育教学信息化大奖赛高等教育组精品开放课程二等奖，获得重庆市巴南区优秀科技工作者人气奖，也多次获得重庆理工大学优秀教师、班导师、教师创新创业、就业先进个人、学院绩效考核师德师风、学风建设、优秀党员、IBM高级软件工程师等相关技术证书、奖励20余项，指导学生全国、重庆市、校级各种竞赛获奖30余项。所带学生班级学风优良均获得优秀班级、优秀团支部等称号，有三百班级（毕业率、学位率、就业率100%）、有考研率名列前茅班级、有创新创业典型班级。倪伟老师和研究室成员提出了CS4C计划（ComputerScienceForChildren），该计划旨在加强K-12阶段青少年儿童的计算思维教育，激发青少年儿童对计算机科学的兴趣，推动中国计算思维教育的发展。该计划将从青少年儿童计算机科学类书籍的编著、计算思维教育的落地实践教学研究、公益教学、社会教学、中小学信息化素养培养等方面进行工作开展，通过打造教学体系、教学实践及推广、加强计算思维教育工作者良性互动交流等以期在社会形成计算思维教育良性氛围，为国家科教兴国、人工智能等高科技领域培养未来储备性人才作好基础教育工作。', '180xxxxxxxx', '14xxxxxxxx@163.com', '1');
+INSERT INTO `member` VALUES ('2', '大大', '0', '我是学生，重要的的学生', '152xxxxxxxx', '15xxxxxxxx@qq.com', '1');
+INSERT INTO `member` VALUES ('3', '小小', '0', '我是学生，普通的学生', '152xxxxxxxx', '14xxxxxxxx@qq.com', '0');
+INSERT INTO `member` VALUES ('4', '老师2', '1', '我是老师，非主要老师', '180xxxxxxx', '14xxxxxxx@163.com', '1');
+
+-- ----------------------------
+-- Table structure for news
+-- ----------------------------
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE `news` (
+  `id` int NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `img_boolean` int NOT NULL,
+  `img_src` varchar(255) DEFAULT NULL,
+  `sort` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- ----------------------------
+-- Records of news
+-- ----------------------------
+INSERT INTO `news` VALUES ('1', '什么是计算机思维', '小小小', '从本世纪70年代开始就有不少的计算机科学家预言“能够思维的计算机”很快就会问世。但是，到目前为止，即使全世界最高级的计算机也还始终只是一台按照人编制的程序工作的“机器”。 在现代机器刚刚发明出来之时，不少人希望能够制造出一旦发动就不再需要新的能量、能够永远运转不停的“永动机”。后来，科学家们能够最终能从理论上证明“制造永动机”的不可能。我们现在虽然不能象科学家们证明“永动机不可能”那样证明“计算机不能思维”。但至少可以从逻辑上对这个问题作出一个初步的判断。\n\n一、从计算机语言的角度证明计算机不能象人的大脑那样工作\n\n许多计算机科学认为将来的计算机能够象人的大脑那样思维的主要原因是因为人类使用语言思维，计算机也可以使用计算机语言。这样，计算机最终能够象人的大脑那样思维。\n\n在这里，赞同计算机能够象人的大脑那样思维的计算机科学家犯了如下逻辑上的错误：先把人类思维简单地等同于语言思维，再把计算机语言简单地等同于人类语言。这样，人是用语言思维的，凡是能够使用语言的“事物”---不管是人还是机器，都能够“思维”。我们可以通过人类语言和计算机语言的对比来证明：在现有的计算机硬件水平上，无论采用什么高级的计算机语言，计算机都不可能象人的大脑那样思维。', '2021-03-02 21:56:51', '0', null, '0');
+INSERT INTO `news` VALUES ('2', '国内新闻（信息教育）', '大大大', '阿里巴拉', '2021-03-02 22:15:55', '0', null, '1');
+INSERT INTO `news` VALUES ('3', '国外新闻', '略略略', '这里是内容', '2021-03-02 22:15:32', '0', null, '3');
+INSERT INTO `news` VALUES ('4', '国内新闻（国内活动）', '嘿嘿嘿', '这里是内容 国内活动的', '2021-03-02 22:16:20', '0', null, '2');
