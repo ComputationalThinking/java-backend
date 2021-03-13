@@ -99,7 +99,7 @@ public class CodeGenerator {
 
         templateConfig.setXml(null);
         mpg.setTemplate(templateConfig);
-
+        //测试注释
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
