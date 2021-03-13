@@ -29,6 +29,12 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements Ne
         List<News> list = new ArrayList<>();
         return jdbcTemplate.query("select * from news;", new BeanPropertyRowMapper<>(News.class));
     }
+    @Override
+     //增加数据
+     public void addOne(Integer id,String title,String author,String content,String time,String img_boolean,String img_src,String sort){
+        String sql= "insert into news values("+id+",'"+title+"','"+author+"','"+content+"','"+time+"',"+img_boolean+",'"+img_src+"','"+sort+"')";
+        jdbcTemplate.update(sql);
+    }
     //根据条件查询
 //    @Override
 //    public List<Object> findByCondition(String attribute,String key){
