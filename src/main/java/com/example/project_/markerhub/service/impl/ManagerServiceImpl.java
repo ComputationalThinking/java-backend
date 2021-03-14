@@ -27,26 +27,30 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
     public List<Manager> findAll() {
         return jdbcTemplate.query("select * from manager;", new BeanPropertyRowMapper<>(Manager.class));
     }
-//    //根据条件查询
-//    @Override
-//    public List<Manager> findByCondition(){
-//        List<Manager> list = new ArrayList<>();
-//
-//        return list;
-//    }
-//    //更新数据
-//    @Override
-//    public void updata(){
-//
-//    }
-//    //添加数据
-//    @Override
-//    public void insert(){
-//
-//    }
-//    //删除数据
-//    @Override
-//    public void delete(){
-//
-//    }
+    //根据条件查询
+    @Override
+    public List<Manager> findByCondition(String attribute,String key){
+        List<Manager> list = new ArrayList<>();
+        String sql="SELECT * FROM "+ 'manager'+" WHERE "+ attribute +" LIKE '%"+key+"%'";
+        list=getMapper(sql,manager);
+        return list;
+    }
+    //更新数据
+    @Override
+    public void updata(String attribute,String value,String id){
+        String sql ="UPDATE " + 'manager' + " SET " + attribute + " = '" + value + "' WHERE id = " + id;
+        jdbcTemplate.update(sql);
+    }
+    //添加数据
+    @Override
+    public void insert(String id,String password){
+        String sql="insert into manager values('"+id+"','"+password+"')";
+        jdbcTemplate.update(sql);
+    }
+    //删除数据
+    @Override
+    public void delete(String id){
+        String sql="delete from "+ manager +" where id=" + id;
+        jdbcTemplate.update(sql);
+    }
 }

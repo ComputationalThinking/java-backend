@@ -24,4 +24,9 @@ public class ManagerController {
         List<Manager> list =userService.findAll();
         return list;
     }
+//    @GetMapping("/addInf")
+//    public List<Manager> find(){
+//        List<Manager> list =userService.insert
+//        return list;
+//    }
 }
