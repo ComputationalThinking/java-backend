@@ -2,14 +2,7 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset" name="ApplicationContext" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/applicationContext</file>
-          <file>file://$MODULE_DIR$/src/main/java/com/example/project_/config/CorsConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/com/example/project_/com/markerhub/config/MybatisPlusConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/com/example/project_/ProjectApplication.java</file>
-        </fileset>
-      </configuration>
+      <configuration />
     </facet>
     <facet type="web" name="Web">
       <configuration>
@@ -30,50 +23,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES />
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://D:/咋七八/各种表/shiro-redis/src/integration-test/java" />
-          <root url="file://D:/咋七八/各种表/shiro-redis/src/main/java" />
-          <root url="file://D:/咋七八/各种表/shiro-redis/src/test/java" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/build/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/demo/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/generated/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/legacy/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/main/core-api/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/main/core-impl/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/main/protocol-impl/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/main/user-api/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/main/user-impl/java" />
-          <root url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18/src/test/java" />
-        </SOURCES>
-        <jarDirectory url="file://D:/咋七八/各种表/mysql-connector-java-8.0.18" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://D:/咋七八/各种表/Jdbc Template" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://D:/咋七八/各种表/Jdbc Template" recursive="false" />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.2.6.RELEASE" level="project" />

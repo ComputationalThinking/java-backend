@@ -20,11 +20,19 @@ public class Manager implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    private Integer id;
+
+    private String username;
 
     private String password;
 
-    public String getId() {
+//    public Manager(Integer id, String name,String password) {
+//        this.id = id;
+//        this.name=name;
+//        this.password = password;
+//    }
+
+    public Integer getId() {
         return id;
     }
 
@@ -36,7 +44,13 @@ public class Manager implements Serializable {
         this.password = password;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
+
+    public String getName() {
+        return username;
+    }
+
+    public void setName(String name) { this.username=name; }
 }
