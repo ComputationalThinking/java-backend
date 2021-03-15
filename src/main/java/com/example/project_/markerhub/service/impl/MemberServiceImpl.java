@@ -21,6 +21,8 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    
+
     //查询所有
     @Override
     public List<Member> findALL(){

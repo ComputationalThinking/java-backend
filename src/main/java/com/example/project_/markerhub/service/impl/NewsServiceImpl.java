@@ -6,7 +6,7 @@ import com.example.project_.markerhub.mapper.NewsMapper;
 import com.example.project_.markerhub.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.*;
-import org.springframework.stereotype.Service;
+import orggit.springframework.stereotype.Service;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -35,25 +35,27 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements Ne
         String sql= "insert into news values("+id+",'"+title+"','"+author+"','"+content+"','"+time+"',"+img_boolean+",'"+img_src+"','"+sort+"')";
         jdbcTemplate.update(sql);
     }
+
     //根据条件查询
-//    @Override
-//    public List<Object> findByCondition(String attribute,String key){
-//
-//    }
+    @Override
+    public List<News> findByCondition(String attribute,String key){
+        List<News> list = new ArrayList<>();
+        String sql="SELECT * FROM "+ 'News'+" WHERE "+ attribute +" LIKE '%"+key+"%'";
+        list=getMapper(sql,News);
+        return list;
+    }
     //更新数据
-//    @Override
-//    public void update(String attribute,String key,Integer id){
-//
-//    }
-//    //添加数据
-//    @Override
-//    public void insert(){
-//
-//    }
+    @Override
+    public void updata(String attribute,String value,String id){
+        String sql ="UPDATE " + 'News' + " SET " + attribute + " = '" + value + "' WHERE id = " + id;
+        jdbcTemplate.update(sql);
+    }
     //删除数据
-//    @Override
-//    public void delete(Integer id){
-//
-//    }
+    @Override
+    public void delete(String id){
+        String sql="delete from "+ News +" where id=" + id;
+        jdbcTemplate.update(sql);
+    }
+}
 
 }
