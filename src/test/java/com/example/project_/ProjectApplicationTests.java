@@ -59,8 +59,14 @@ class ProjectApplicationTests {
 	@Test
 	public void test2(){
 //		userService.updateAll("xx","xx",2);
-		System.out.println(userService.findByCondition("username", "xx"));
+//		userService.insert(26,"hh","mm");
+//		System.out.println(userService.findByCondition("username", "xx"));
+//		userService.delete(3);
+//		userService.update("username","hh",5);
+		System.out.println(userService.findByCondition("username", "hh"));
 	}
+
+
 
 
 }

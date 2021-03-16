@@ -11,8 +11,10 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class dboAll {
@@ -42,10 +44,13 @@ public class dboAll {
         return message;
     }
     //根据某属性查询
-    public List<Object> findOne(String tableName,String attribute,String key){
-        String sql="SELECT * FROM "+ tableName+" WHERE "+ attribute +" LIKE '%"+key+"%'";
-        List message = getMapper(sql,tableName);
-        return message;
+    public List<Map<String, Object>> findOne(String tableName, String attribute, String key){
+
+        String sql="SELECT * FROM ?  WHERE  ?  LIKE %?%";
+        Object []args={ tableName,attribute,key};
+        int[] argTypes={Types.VARCHAR,Types.VARCHAR,Types.VARCHAR};
+        return jdbcTemplate.queryForList(sql,args,argTypes);
+
     }
     //更新数据
     public void updateOne(String tableName,String attribute,String value,Integer id){

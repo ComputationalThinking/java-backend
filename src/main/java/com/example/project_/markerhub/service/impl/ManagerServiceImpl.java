@@ -36,16 +36,32 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
     @Override
     public List<Manager> findByCondition(String attribute, String key){
         List<Manager> list = new ArrayList<>();
-        String sql="SELECT * FROM "+ "manager"+" WHERE "+ attribute +" LIKE '%"+key+"%'";
-        list=jdbcTemplate.query(sql,ManagerMapper);
+        String sql=null;
+        if(attribute.equals("username")){
+            sql ="select * from manager where username=?";
+        }
+        else if(attribute.equals("password")){
+            sql ="select * from manager where password=?";
+        }
+        Object[] args={key};
+        int[] argTypes={Types.VARCHAR};
+        list=jdbcTemplate.query(sql,args,argTypes,ManagerMapper);
         return list;
     }
 
     //更新数据
     @Override
     public void update(String attribute,String value,Integer id){
-        String sql ="UPDATE " + "manager" + " SET " + attribute + " = '" + value + "' WHERE id = " + id;
-        jdbcTemplate.update(sql);
+        String sql=null;
+        if(attribute.equals("username")){
+            sql ="UPDATE manager SET username=? WHERE id=?";
+        }
+        else if(attribute.equals("password")){
+            sql ="UPDATE manager SET password=? WHERE id=?";
+        }
+        Object[] args={value,id};
+        int[] argTypes={Types.VARCHAR,Types.INTEGER};
+        jdbcTemplate.update(sql,args,argTypes);
     }
     //更新所有数据
     @Override
@@ -58,13 +74,17 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
     //添加数据
     @Override
     public void insert(Integer id, String username, String password)  {
-        String sql="insert into manager values("+id+",'"+username+"','"+password+"')";
-        jdbcTemplate.update(sql);
+        String sql="insert into manager values(?,?,?)";
+        Object[] args={id,username,password};
+        int[] argTypes={Types.INTEGER,Types.VARCHAR,Types.VARCHAR};
+        jdbcTemplate.update(sql,args,argTypes);
     }
     //删除数据
     @Override
     public void delete(Integer id){
-        String sql="delete from "+ "manager" +" where id=" + id;
-        jdbcTemplate.update(sql);
+        String sql="delete from manager  where id= ?";
+        Object[] args={id};
+        int[] argTypes={Types.INTEGER};
+        jdbcTemplate.update(sql,args,argTypes);
     }
 }
