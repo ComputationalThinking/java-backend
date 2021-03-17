@@ -9,13 +9,13 @@ import java.util.Map;
 
 public interface MemberService extends IService<Member> {
     //查询所有
-    List<Member> findALL();
+    List<Member> findAll();
     //查询单个
-//    List<Map<String,Object>> findByCondition(String attribute, String value);
-//    添加数据
-//    void updata(Member member);
-//    修改数据
-//    void update();
-//    删除数据
-//    void delete();
+    List<Object> findByCondition(String attribute,String key);
+    //    添加数据
+    void insert(Member member);
+    //    修改数据
+    void update(Member member);
+    //    删除数据
+    void delete(Member member);
 }
