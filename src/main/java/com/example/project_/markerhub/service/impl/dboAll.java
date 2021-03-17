@@ -30,37 +30,27 @@ public class dboAll {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public List<Object> getMapper(String sql,String tableName){
-        List message = new ArrayList();
-        if(tableName.equals("news")){
-            message = jdbcTemplate.query(sql,NewsMapper);
-        }else if(tableName.equals("manager")){
-            message = jdbcTemplate.query(sql,ManagerMapper);
-        }else if(tableName.equals("achieve")){
-            message = jdbcTemplate.query(sql,AchieveMapper);
-        }else if(tableName.equals("member")){
-            message = jdbcTemplate.query(sql,MemberMapper);
-        }
-        return message;
-    }
     //根据某属性查询
-    public List<Map<String, Object>> findOne(String tableName, String attribute, String key){
-
-        String sql="SELECT * FROM ?  WHERE  ?  LIKE %?%";
-        Object []args={ tableName,attribute,key};
-        int[] argTypes={Types.VARCHAR,Types.VARCHAR,Types.VARCHAR};
-        return jdbcTemplate.queryForList(sql,args,argTypes);
-
-    }
+//    public List<Map<String,Object>> findOne(String tableName, String attribute, String key){
+//
+//        String sql="SELECT * FROM ? WHERE ? LIKE %?%";
+//        Object []args={ tableName,attribute,key};
+//        int[] argTypes={Types.VARCHAR,Types.VARCHAR,Types.VARCHAR};
+////        Object[] object = new Object[]{tableName,attribute,key};
+//        return jdbcTemplate.queryForList(sql,args,argTypes);
+//
+//    }
     //更新数据
     public void updateOne(String tableName,String attribute,String value,Integer id){
-        String sql ="UPDATE " + tableName + " SET " + attribute + " = '" + value + "' WHERE id = " + id;
-        jdbcTemplate.update(sql);
+//        String sql ="UPDATE ? SET ? =? WHERE id =?" ;
+        String sql="UPDATE member SET name =? WHERE id =?";
+//        update t_user set user_name = ? , user_age = ? , user_sex = ? where user_id = ?
+        Integer result = jdbcTemplate.update(sql,attribute,value,id);
     }
 
     //删除数据
     public void delete(String tableName,Integer id){
-        String sql="delete from "+ tableName +" where id=" + id;
-        jdbcTemplate.update(sql);
+        String sql="delete from ? where id = ?";
+        jdbcTemplate.update(sql,tableName,id);
     }
 }

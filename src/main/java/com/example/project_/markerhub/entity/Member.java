@@ -32,7 +32,9 @@ public class Member implements Serializable {
 
     private String email;
 
-    private String area;
+    private Integer area;
+
+    private String role;
 
 
 }
