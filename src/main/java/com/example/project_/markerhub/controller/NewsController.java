@@ -15,47 +15,48 @@ import java.util.*;
 @RequestMapping("/News")
 public class NewsController {
     @Autowired
-    NewsService userService;
-    @GetMapping("/newsFindAll")
+   private NewsService newsService;
+
+    @GetMapping("/FindAll")
     public List<News> findAll(){
-        List<News> list =userService.findAll();
+        List<News> list =newsService.findAll();
         return list;
     }
-//    @GetMapping("/newsFindByCondition")
-//    public List<Object> findByCondition(){
-//        List<Object> list =userService.findByCondition("identity","1");
-//        return list;
-//    }
-//    @GetMapping("/newsUpdate")
-//    public void update(){
-//        News news=new News();
-//        news.setId(1);
-//        news.setTitle("The history of News");
-//        news.setAuthor("水冰月");
-//        news.setTime("2021-03-18");
-//        news.setImg_boolean("1");
-//        news.setImg_src("c:\desktop\op");
-//        news.setContent("however");
-//        news.setSort("2");
-//        userService.update(news);
-//    }
-//    @GetMapping("/newsDelete")
-//    public void delete(){
-//        News news=new News();
-//        news.setId(2);
-//        userService.delete(news);
-//    }
-//    @GetMapping("/newsInsert")
-//    public void insert(){
-//        News news=new News();
-//        news.setId(3);
-//        news.setTitle("Hello World!");
-//        news.setAuthor("happy monkey");
-//        news.setTime("1996-03-18");
-//        news.setImg_boolean("1");
-//        news.setImg_src("main.jpg");
-//        news.setContent("whatever");
-//        news.setSort("3");
-//        userService.insert(news);
-//    }
+   @GetMapping("/FindByCondition")
+   public List<Object> findByCondition(){
+       List<Object> list =newsService.findByCondition("identity","1");
+       return list;
+   }
+   @GetMapping("/Update")
+   public void update(){
+       News news=new News();
+       news.setId(1);
+       news.setTitle("The history of News");
+       news.setAuthor("水冰月");
+       news.setTime("2021-03-18");
+       news.setImg_boolean("1");
+       news.setImg_src("c:\desktop\op");
+       news.setContent("however");
+       news.setSort("2");
+       newsService.update(news);
+   }
+   @GetMapping("/Delete")
+   public void delete(){
+       News news=new News();
+       news.setId(2);
+       newsService.delete(news);
+   }
+   @GetMapping("/Insert")
+   public void insert(){
+       News news=new News();
+       news.setId(3);
+       news.setTitle("Hello World!");
+       news.setAuthor("happy monkey");
+       news.setTime("1996-03-18");
+       news.setImg_boolean("1");
+       news.setImg_src("main.jpg");
+       news.setContent("whatever");
+       news.setSort("3");
+       newsService.insert(news);
+   }
 }
