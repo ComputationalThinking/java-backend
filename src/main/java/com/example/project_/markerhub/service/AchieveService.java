@@ -10,11 +10,11 @@ public interface AchieveService extends IService<Achieve> {
     //查询所有
     List<Achieve> findALL();
     //查询单个
-    List<Achieve> findByCondition(String attribute,String key);
+    List<Achieve> findByCondition(String value);
 //    添加数据
-    void update(String attribute,String value,Integer id);
+    void update(Achieve achieve);
 //    修改数据
-    void insert(Integer id, String title, String content, LocalDateTime time, Integer hot, String participantMember, Integer sort, String achieveName);
+    void insert(Achieve achieve);
 //    删除数据
     void delete(Integer id);
 }

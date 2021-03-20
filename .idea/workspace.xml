@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2a4ac8-de2f-4c39-a80b-187a9a113b43" name="默认" comment="detail">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/Member.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/Member.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/AchieveService.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/AchieveService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/MemberService.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/MemberService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/AchieveServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/AchieveServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/dboAll.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/dboAll.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/MemberController.class" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/MemberController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/entity/Member.class" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/entity/Member.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/AchieveService.class" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/AchieveService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/MemberService.class" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/MemberService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/MemberServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/MemberServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/dboAll.class" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/dboAll.class" />
+    <list default="true" id="0f2a4ac8-de2f-4c39-a80b-187a9a113b43" name="默认" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/AchieveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/AchieveController.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,141 +26,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AchieveServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/AchieveServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <marker date="1615984439730" expanded="true" signature="1033:1054" ph="select * fro... achieve" />
-                <marker date="1615984439730" expanded="true" signature="1228:1288" ph="SELECT * FRO... achieve" />
-                <marker date="1615984439730" expanded="true" signature="1492:1558" ph="UPDATE achieve... " />
-                <marker date="1615984439730" expanded="true" signature="1806:1936" ph="insert into achieve... " />
-                <marker date="1615984439730" expanded="true" signature="2060:2089" ph="delete from achieve... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AchieveService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/AchieveService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dboAll.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/dboAll.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1248#1249#0" expanded="true" />
-                <marker date="1615984626586" expanded="true" signature="1385:1417" ph="SELECT * FRO... ?" />
-                <marker date="1615984626586" expanded="true" signature="1805:1822" ph="UPDATE ?... " />
-                <marker date="1615984626586" expanded="true" signature="1805:1833" ph="UPDATE missingValue... " />
-                <marker date="1615984626586" expanded="true" signature="1805:1834" ph="UPDATE ?... " />
-                <marker date="1615984626586" expanded="true" signature="1858:1895" ph="UPDATE member... " />
-                <marker date="1615984626586" expanded="true" signature="2149:2175" ph="delete from ?... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/ManagerServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1650">
-              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <marker date="1615944199113" expanded="true" signature="1251:1272" ph="select * fro... manager" />
-                <marker date="1615944199113" expanded="true" signature="1559:1597" ph="select * fro... manager" />
-                <marker date="1615944199113" expanded="true" signature="1675:1713" ph="select * fro... manager" />
-                <marker date="1615944199113" expanded="true" signature="2065:2105" ph="UPDATE manager... " />
-                <marker date="1615944199113" expanded="true" signature="2183:2223" ph="UPDATE manager... " />
-                <marker date="1615944199113" expanded="true" signature="2504:2561" ph="update manager... " />
-                <marker date="1615944199113" expanded="true" signature="2867:2900" ph="insert into manager... " />
-                <marker date="1615944199113" expanded="true" signature="3152:3184" ph="delete from manager... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemberServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-              <folding>
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <marker date="1615984626549" expanded="true" signature="1106:1126" ph="select * fro... member" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/Member.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="News.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/News.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemberController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/ManagerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemberService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/MemberService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -214,11 +67,6 @@
         <option name="alwaysUpdateSnapshots" value="true" />
         <option name="userSettingsFile" value="D:\setting_file\setting.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -357,25 +205,13 @@
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.example.project_" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\project_\src\main\java\com\example\project_\markerhub\service\impl" />
       <recent name="D:\project_\src\main\java\com\example\project_" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.project_" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ProjectApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -388,175 +224,107 @@
       </method>
     </configuration>
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="com.example.project_.CodeGenerator" />
+      <module name="project_" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.project_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.project_.CodeGenerator" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="project_" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ProjectApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
+      <module name="project_" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.project_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="project_" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.project_" />
       <option name="MAIN_CLASS_NAME" value="com.example.project_.ProjectApplicationTests" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ProjectApplicationTests.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
+      <module name="project_" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.project_.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="project_" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.project_" />
       <option name="MAIN_CLASS_NAME" value="com.example.project_.ProjectApplicationTests" />
       <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.project_.ProjectApplication" />
       <module name="project_" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.project_.ProjectApplication" />
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-      <method>
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.ProjectApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CodeGenerator" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProjectApplicationTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ProjectApplicationTests.findAll" />
+    <list>
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="JUnit.ProjectApplicationTests" />
+      <item itemvalue="JUnit.ProjectApplicationTests.findAll" />
+      <item itemvalue="Spring Boot.ProjectApplication" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ProjectApplicationTests.findAll" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ProjectApplicationTests" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CodeGenerator" />
+      <list>
+        <item itemvalue="JUnit.ProjectApplicationTests.findAll" />
+        <item itemvalue="JUnit.ProjectApplicationTests" />
+        <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -630,16 +398,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="detail" />
     <option name="LAST_COMMIT_MESSAGE" value="detail" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/NewsServiceImpl.java">
