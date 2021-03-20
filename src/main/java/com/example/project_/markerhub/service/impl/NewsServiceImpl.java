@@ -17,51 +17,51 @@ import java.util.List;
 @Service
 public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements NewsService {
     @Autowired
-    private dboAll dbo;
-    @Autowired
     private JdbcTemplate jdbcTemplate;
+    private BeanPropertyRowMapper<News> NewsMapper = new BeanPropertyRowMapper<>(News.class);
+
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate){
         this.jdbcTemplate = jdbcTemplate;
     }
-
-    @Override
-    public List<News> findAll() {
-        return null;
+    public List<Object> getMapper(String sql){
+        List message = new ArrayList();
+        message = jdbcTemplate.query(sql,NewsMapper);
+        return message;
     }
+   //查询所有
+   @Override
+   public List<News> findAll() {
+       List<News> list = new ArrayList<>();
+       return jdbcTemplate.query("select * from news;", new BeanPropertyRowMapper<>(News.class));
+   }
 
-//    //查询所有
-//    @Override
-//    public List<News> findAll() {
-//        List<News> list = new ArrayList<>();
-//        return jdbcTemplate.query("select * from news;", new BeanPropertyRowMapper<>(News.class));
-//    }
-//    @Override
-//     //增加数据
-//     public void addOne(Integer id,String title,String author,String content,String time,String img_boolean,String img_src,String sort){
-//        String sql= "insert into news values("+id+",'"+title+"','"+author+"','"+content+"','"+time+"',"+img_boolean+",'"+img_src+"','"+sort+"')";
-//        jdbcTemplate.update(sql);
-//    }
-//
-//    //根据条件查询
-//    @Override
-//    public List<News> findByCondition(String attribute,String key){
-//        List<News> list = new ArrayList<>();
-//        String sql="SELECT * FROM "+ 'News'+" WHERE "+ attribute +" LIKE '%"+key+"%'";
-//        list=getMapper(sql,News);
-//        return list;
-//    }
-//    //更新数据
-//    @Override
-//    public void updata(String attribute,String value,String id){
-//        String sql ="UPDATE " + 'News' + " SET " + attribute + " = '" + value + "' WHERE id = " + id;
-//        jdbcTemplate.update(sql);
-//    }
-//    //删除数据
-//    @Override
-//    public void delete(String id){
-//        String sql="delete from "+ News +" where id=" + id;
-//        jdbcTemplate.update(sql);
-//    }
+   //根据条件查询
+   @Override
+   public List<News> findByCondition(String attribute,String key){
+       String sql="SELECT * FROM news"+" WHERE "+ attribute +" LIKE '%"+key+"%'";
+       List list=getMapper(sql,News);
+       return list;
+   }
+   //更新数据
+   @Override
+   public void update(News news){
+       String sql ="UPDATE news set sort=?,title=?,author=?,content=?,time=?,img_bollean=?,img_src=? where id=?";
+       jdbcTemplate.update(sql,news.getTitle(),news.getAuthor(),news.getContent(),news.getTime(),news.getImg_boolean(),news.getImg_src(),news.getSort(),news.getId());
+   }
+   @Override
+   //添加数据
+   @Override
+   public void insert(News news){
+       //String sql="insert into news values ("+id+",'"+name+"',"+identity+",'"+content+"','"+tel+"','"+email+"',"+area+",'"+role+"')";
+       String sql="insert into news values (?,?,?,?,?,?,?,?)";
+       jdbcTemplate.update(sql,news.getId(),news.getTitle(),news.getAuthor(),news.getContent(),news.getTime(),news.getImg_boolean(),news.getImg_src(),news.getSort());
+   }
+   //删除数据
+   @Override
+   public void delete(News news){
+       String sql="delete from news where id=?";
+       jdbcTemplate.update(sql,news.getId());
+   }
 }
 
 
