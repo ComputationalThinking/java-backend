@@ -36,19 +36,18 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements Ne
    }
 
    //根据条件查询
-   @Override
-   public List<News> findByCondition(String attribute,String key){
-       String sql="SELECT * FROM news"+" WHERE "+ attribute +" LIKE '%"+key+"%'";
-       List list=getMapper(sql,News);
-       return list;
-   }
+//   @Override
+//   public List<News> findByCondition(String attribute,String key){
+//       String sql="SELECT * FROM news"+" WHERE "+ attribute +" LIKE '%"+key+"%'";
+//       List list=getMapper(sql,News);
+//       return list;
+//   }
    //更新数据
    @Override
    public void update(News news){
        String sql ="UPDATE news set sort=?,title=?,author=?,content=?,time=?,img_bollean=?,img_src=? where id=?";
        jdbcTemplate.update(sql,news.getTitle(),news.getAuthor(),news.getContent(),news.getTime(),news.getImg_boolean(),news.getImg_src(),news.getSort(),news.getId());
    }
-   @Override
    //添加数据
    @Override
    public void insert(News news){

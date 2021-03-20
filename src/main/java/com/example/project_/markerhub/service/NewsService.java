@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface MewsrService extends IService<News> {
+public interface NewsService extends IService<News> {
     List<News> findAll();
     //查询单个
-    List<News> findByCondition(String attribute,String key);
+//    List<News> findByCondition(String attribute,String key);
     //    添加数据
    void insert(News news);
    //    修改数据
