@@ -1,8 +1,6 @@
-// package com.example.project_;
+package com.example.project_;
 import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.entity.News;
-import com.example.project_.markerhub.mapper.newsMapper;
-import com.example.project_.markerhub.service.NewsMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,31 +16,31 @@ import java.util.List;
 
 @SpringBootTest
 class ProjectApplicationTests {
-	// @Autowired
-	// newsMapper newsMapper;
-	// @Autowired
-	// JdbcTemplate jdbcTemplate;
-	// @Autowired
-	// NewsMapper newsService;
-	@Autowired
-	NewsMapper newsMapper;
-	@Autowired
-	JdbcTemplate jdbcTemplate;
-	@Autowired
-	NewsMapper newsService;
-	@Test
-	public void findAll() {
-		List<News> list = new ArrayList<>();
-		list = jdbcTemplate.query("select * from news;", new BeanPropertyRowMapper<>(News.class));
-		System.out.print(list);
-	}
-	@Test
-	public void test() throws SQLException {
-		Integer id=100;
-		String name="hh";
-		String password="xx";
-		newsService.insert(id,name,password);
-	}
+//	 @Autowired
+//	 newsMapper newsMapper;
+//	 @Autowired
+//	 JdbcTemplate jdbcTemplate;
+//	 @Autowired
+//	 NewsMapper newsService;
+//	@Autowired
+//	NewsMapper newsMapper;
+//	@Autowired
+//	JdbcTemplate jdbcTemplate;
+//	@Autowired
+//	NewsMapper newsService;
+//	@Test
+//	public void findAll() {
+//		List<News> list = new ArrayList<>();
+//		list = jdbcTemplate.query("select * from news;", new BeanPropertyRowMapper<>(News.class));
+//		System.out.print(list);
+//	}
+//	@Test
+//	public void test() throws SQLException {
+//		Integer id=100;
+//		String name="hh";
+//		String password="xx";
+//		newsService.insert(id,name,password);
+//	}
 	@Test
 	public void test1() throws SQLException {
 		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/computationalthinking?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai","root","root");
@@ -62,11 +60,11 @@ class ProjectApplicationTests {
 	}
 	@Test
 	public void main(){
-		newsService.update(1,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
-		newsService.insert(3,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
-		// System.out.println(newsService.findByCondition("username", "xx"));
-		newsService.delete(2);
-		System.out.println(newsService.findAll());
+//		newsService.update(1,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
+//		newsService.insert(3,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
+//		// System.out.println(newsService.findByCondition("username", "xx"));
+//		newsService.delete(2);
+//		System.out.println(newsService.findAll());
 	}
 
 

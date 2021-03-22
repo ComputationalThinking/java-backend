@@ -2,6 +2,9 @@ package com.example.project_.markerhub.entity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -20,7 +23,7 @@ import lombok.experimental.Accessors;
 public class Achieve implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
+    @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
 
     private String title;
@@ -36,6 +39,8 @@ public class Achieve implements Serializable {
     private Integer sort;
 
     private String achieveName;
+
+    private String img;
 
 
 }

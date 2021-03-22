@@ -38,6 +38,7 @@ public class MemberController {
         member.setName("臭牛津");
         member.setId(4);
         member.setRole("老师");
+        member.setImg("adfasdfasdfasdfa");
         userService.update(member);
     }
     @GetMapping("/memberDelete")
@@ -57,6 +58,7 @@ public class MemberController {
         member.setName("学生8");
         member.setId(10);
         member.setRole("老师");
+        member.setImg("dadfasdfasdf");
         userService.insert(member);
     }
 }
