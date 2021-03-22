@@ -59,7 +59,7 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements Ne
    @Override
    public void delete(Integer id){
        String sql="delete from news where id=?";
-       jdbcTemplate.update(sql,news.getId());
+       jdbcTemplate.update(sql,id);
    }
 }
 
