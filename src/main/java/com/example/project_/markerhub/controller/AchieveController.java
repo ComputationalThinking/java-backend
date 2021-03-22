@@ -54,6 +54,7 @@ public class AchieveController {
         achieve.setParticipantMember("超");
         achieve.setSort(0);
         achieve.setAchieveName("锦");
+        achieve.setImg("sdasdfasf");
         achieveService.update(achieve);
     }
 }

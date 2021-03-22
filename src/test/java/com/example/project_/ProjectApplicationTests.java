@@ -1,9 +1,6 @@
 package com.example.project_;
-
-import com.example.project_.markerhub.entity.Manager;
 import com.example.project_.markerhub.entity.News;
-import com.example.project_.markerhub.mapper.ManagerMapper;
-import com.example.project_.markerhub.service.ManagerService;
+import com.example.project_.markerhub.entity.News;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,32 +16,37 @@ import java.util.List;
 
 @SpringBootTest
 class ProjectApplicationTests {
-	@Autowired
-	ManagerMapper managerMapper;
-
-	@Autowired
-	JdbcTemplate jdbcTemplate;
-	@Autowired
-	ManagerService userService;
-	@Test
-	public void findAll() {
-		List<Manager> list = new ArrayList<>();
-		list = jdbcTemplate.query("select * from manager;", new BeanPropertyRowMapper<>(Manager.class));
-		System.out.print(list);
-	}
-	@Test
-	public void test() throws SQLException {
-		Integer id=100;
-		String name="hh";
-		String password="xx";
-		userService.insert(id,name,password);
-	}
+//	 @Autowired
+//	 newsMapper newsMapper;
+//	 @Autowired
+//	 JdbcTemplate jdbcTemplate;
+//	 @Autowired
+//	 NewsMapper newsService;
+//	@Autowired
+//	NewsMapper newsMapper;
+//	@Autowired
+//	JdbcTemplate jdbcTemplate;
+//	@Autowired
+//	NewsMapper newsService;
+//	@Test
+//	public void findAll() {
+//		List<News> list = new ArrayList<>();
+//		list = jdbcTemplate.query("select * from news;", new BeanPropertyRowMapper<>(News.class));
+//		System.out.print(list);
+//	}
+//	@Test
+//	public void test() throws SQLException {
+//		Integer id=100;
+//		String name="hh";
+//		String password="xx";
+//		newsService.insert(id,name,password);
+//	}
 	@Test
 	public void test1() throws SQLException {
 		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/computationalthinking?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai","root","root");
-		PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO manager (id,username,password) VALUES ( ?, ?, ? )");
-		String a1 = new String("INSERT INTO   manager (id,username,password) VALUES (?, ?, ?)");
-		String s = new String("INSERT INTO  manager (id,username,password) VALUES (?, ?, ?)");
+		PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO news (id,username,password) VALUES ( ?, ?, ? )");
+		String a1 = new String("INSERT INTO   news (id,username,password) VALUES (?, ?, ?)");
+		String s = new String("INSERT INTO  news (id,username,password) VALUES (?, ?, ?)");
 		for (int i = 0; i < s.length(); i++) {
 			if(a1.charAt(i)!=s.charAt(i)){
 				System.out.println(i);
@@ -57,16 +59,13 @@ class ProjectApplicationTests {
 //		System.out.println(preparedStatement.executeUpdate());
 	}
 	@Test
-	public void test2(){
-//		userService.updateAll("xx","xx",2);
-//		userService.insert(26,"hh","mm");
-//		System.out.println(userService.findByCondition("username", "xx"));
-//		userService.delete(3);
-//		userService.update("username","hh",5);
-		System.out.println(userService.findByCondition("username", "hh"));
+	public void main(){
+//		newsService.update(1,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
+//		newsService.insert(3,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
+//		// System.out.println(newsService.findByCondition("username", "xx"));
+//		newsService.delete(2);
+//		System.out.println(newsService.findAll());
 	}
-
-
 
 
 }

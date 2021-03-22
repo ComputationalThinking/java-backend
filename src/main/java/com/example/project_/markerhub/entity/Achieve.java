@@ -40,5 +40,7 @@ public class Achieve implements Serializable {
 
     private String achieveName;
 
+    private String img;
+
 
 }

@@ -40,14 +40,14 @@ public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> impl
     //更新数据
     @Override
     public void update(Achieve achieve){
-        String sql ="UPDATE achieve SET title =?,content =?,time =?,hot =?,participant_member =?,sort =?,achieve_name =? WHERE id =?";
-        jdbcTemplate.update(sql,achieve.getTitle(),achieve.getContent(),achieve.getTime(),achieve.getHot(),achieve.getParticipantMember(),achieve.getSort(),achieve.getAchieveName(),achieve.getId());
+        String sql ="UPDATE achieve SET title =?,content =?,time =?,hot =?,participant_member =?,sort =?,achieve_name =?,img =?WHERE id =?";
+        jdbcTemplate.update(sql,achieve.getTitle(),achieve.getContent(),achieve.getTime(),achieve.getHot(),achieve.getParticipantMember(),achieve.getSort(),achieve.getAchieveName(),achieve.getImg(),achieve.getId());
     }
     //添加数据
     @Override
     public void insert(Achieve achieve){
-        String sql="insert into achieve values(null,?,?,?,?,?,?,?)";
-        jdbcTemplate.update(sql,achieve.getTitle(),achieve.getContent(),achieve.getTime(),achieve.getHot(),achieve.getParticipantMember(),achieve.getSort(), achieve.getAchieveName());
+        String sql="insert into achieve values(null,?,?,?,?,?,?,?,?)";
+        jdbcTemplate.update(sql,achieve.getTitle(),achieve.getContent(),achieve.getTime(),achieve.getHot(),achieve.getParticipantMember(),achieve.getSort(), achieve.getAchieveName(),achieve.getImg());
     }
     //删除数据
     @Override

@@ -15,5 +15,5 @@ public interface NewsService extends IService<News> {
    //    修改数据
    void update(News news);
    //    删除数据
-   void delete(News news);
+   void delete(Integer id);
 }

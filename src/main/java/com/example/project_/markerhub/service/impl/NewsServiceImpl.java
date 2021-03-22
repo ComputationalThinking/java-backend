@@ -57,9 +57,9 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements Ne
    }
    //删除数据
    @Override
-   public void delete(News news){
+   public void delete(Integer id){
        String sql="delete from news where id=?";
-       jdbcTemplate.update(sql,news.getId());
+       jdbcTemplate.update(sql,id);
    }
 }
 
