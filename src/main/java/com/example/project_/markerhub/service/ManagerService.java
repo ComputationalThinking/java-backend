@@ -11,7 +11,7 @@ public interface ManagerService extends IService<Manager> {
     //查询单个
     List<Manager> findByCondition(String attribute, String key);
     //添加数据
-    void insert(Integer id, String name, String password);
+    void insert(String name, String password);
     //修改单个数据
     void update(String attribute,String value,Integer id);
     //修改所有数据
