@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.Date;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -30,10 +31,11 @@ public class NewsController {
    @GetMapping("/Update")
    public void update(){
        News news=new News();
-       news.setId(1);
+       news.setId(3);
        news.setTitle("The history of News");
        news.setAuthor("水冰月");
 //       news.setTime(LocalDateTime.of(2021,12,12,10,11,12));
+       news.setTime(LocalDateTime.of(2021,12,12,10,11,12));
        news.setImg_boolean(0);
        news.setImg_src("c");
        news.setContent("however");
@@ -43,16 +45,16 @@ public class NewsController {
    @GetMapping("/Delete")
    public void delete(){
        News news=new News();
-       news.setId(1);
+       news.setId(4);
        newsService.delete(1);
    }
    @GetMapping("/Insert")
    public void insert(){
        News news=new News();
-       news.setId(3);
        news.setTitle("Hello World!");
        news.setAuthor("happy monkey");
 //       news.setTime(LocalDateTime.of(2021,12,12,10,11,12));
+       news.setTime(LocalDateTime.of(2021,12,12,10,11,12));
        news.setImg_boolean(0);
        news.setImg_src("main.jpg");
        news.setContent("whatever");

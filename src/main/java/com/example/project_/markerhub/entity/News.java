@@ -29,77 +29,13 @@ import org.hibernate.validator.constraints.NotBlank;
 public class News implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @TableId(value = "id",type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
     private String title;
     private String author;
     private String content;
-    private Date time;
+    private LocalDateTime time;
     private Integer img_boolean;
     private String img_src;
     private Integer sort;
-
-    public Integer getSort() {
-        return sort;
-    }
-
-    public void setSort(Integer sort) {
-        this.sort = sort;
-    }
-
-    public String getImg_src() {
-        return img_src;
-    }
-
-    public void setImg_src(String img_src) {
-        this.img_src = img_src;
-    }
-
-    public Integer getImg_boolean() {
-        return img_boolean;
-    }
-
-    public void setImg_boolean(Integer img_boolean) {
-        this.img_boolean = img_boolean;
-    }
-
-    public Date getTime() {
-        return time;
-    }
-
-    public void setTime(Date time) {
-        this.time = time;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 }
