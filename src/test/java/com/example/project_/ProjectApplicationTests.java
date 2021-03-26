@@ -1,6 +1,7 @@
 package com.example.project_;
 import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.entity.News;
+import com.example.project_.markerhub.service.ManagerService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,10 +17,12 @@ import java.util.List;
 
 @SpringBootTest
 class ProjectApplicationTests {
+	@Autowired
+	ManagerService userService;
 //	 @Autowired
 //	 newsMapper newsMapper;
-//	 @Autowired
-//	 JdbcTemplate jdbcTemplate;
+	 @Autowired
+	 JdbcTemplate jdbcTemplate;
 //	 @Autowired
 //	 NewsMapper newsService;
 //	@Autowired
@@ -65,7 +68,6 @@ class ProjectApplicationTests {
 //		// System.out.println(newsService.findByCondition("username", "xx"));
 //		newsService.delete(2);
 //		System.out.println(newsService.findAll());
+		userService.insert("xx","wuwu");
 	}
-
-
 }

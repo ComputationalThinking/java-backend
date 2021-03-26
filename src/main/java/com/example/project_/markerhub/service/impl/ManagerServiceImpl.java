@@ -73,10 +73,10 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
     }
     //添加数据
     @Override
-    public void insert(Integer id, String username, String password)  {
-        String sql="insert into manager values(?,?,?)";
-        Object[] args={id,username,password};
-        int[] argTypes={Types.INTEGER,Types.VARCHAR,Types.VARCHAR};
+    public void insert(String username, String password)  {
+        String sql="insert into manager values(null ,?,?)";
+        Object[] args={username,password};
+        int[] argTypes={Types.VARCHAR,Types.VARCHAR};
         jdbcTemplate.update(sql,args,argTypes);
     }
     //删除数据
