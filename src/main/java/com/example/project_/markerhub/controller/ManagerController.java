@@ -24,8 +24,8 @@ public class ManagerController {
     }
     //插入数据
     @GetMapping("/insertData")
-    public void insert(@RequestParam Integer id,@RequestParam String name,@RequestParam String password) throws SQLException {
-        userService.insert(id,name,password);
+    public void insert(@RequestParam String name,@RequestParam String password) throws SQLException {
+        userService.insert(name,password);
     }
     //删除数据
     @GetMapping("/deleteData")
