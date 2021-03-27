@@ -16,4 +16,6 @@ public interface NewsService extends IService<News> {
    void update(News news);
    //    删除数据
    void delete(Integer id);
+   //查询
+   List<News> conditionSearch(Integer sort,String title);
 }
