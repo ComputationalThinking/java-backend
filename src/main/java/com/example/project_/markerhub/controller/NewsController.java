@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Date;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -60,5 +61,11 @@ public class NewsController {
        news.setContent("whatever");
        news.setSort(1);
        newsService.insert(news);
+   }
+   @GetMapping("/search")
+    public List<News> search(){
+        String title = "国内";
+        List<News> list = newsService.conditionSearch(1,"%"+title+"%");
+        return list;
    }
 }
