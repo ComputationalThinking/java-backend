@@ -18,4 +18,6 @@ public interface ManagerService extends IService<Manager> {
     void updateAll(String newUsername,String newPassword,Integer id);
     //删除数据
     void delete(Integer id);
+    //获取分页数据
+    List<Manager> getPageList(int pageNum,int pageSize);
 }
