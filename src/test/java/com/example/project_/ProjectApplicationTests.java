@@ -1,4 +1,7 @@
 package com.example.project_;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.project_.markerhub.entity.Manager;
 import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.service.ManagerService;
@@ -62,12 +65,13 @@ class ProjectApplicationTests {
 //		System.out.println(preparedStatement.executeUpdate());
 	}
 	@Test
-	public void main(){
+	 void main(){
 //		newsService.update(1,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
 //		newsService.insert(3,"hh","mm","ok","1999-10-10","1","oj.jpg","qs","3");
 //		// System.out.println(newsService.findByCondition("username", "xx"));
 //		newsService.delete(2);
 //		System.out.println(newsService.findAll());
-		userService.insert("xx","wuwu");
+//		userService.insert("xx","wuwu");
+		userService.getPageList(1,5);
 	}
 }

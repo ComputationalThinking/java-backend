@@ -47,4 +47,9 @@ public class ManagerController {
     public List<Manager> search(@RequestParam String attribute,@RequestParam String key){
         return userService.findByCondition(attribute, key);
     }
+    //获取分页数据
+    @GetMapping("/getPageData")
+    public List<Manager> getPageList(@RequestParam int pageNum,@RequestParam int pageSize){
+        return userService.getPageList(pageNum,pageSize);
+    }
 }

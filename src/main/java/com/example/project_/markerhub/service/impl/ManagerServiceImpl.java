@@ -1,6 +1,8 @@
 package com.example.project_.markerhub.service.impl;
 
 import com.alibaba.druid.mock.MockConnection;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.project_.markerhub.entity.Manager;
 import com.example.project_.markerhub.mapper.ManagerMapper;
 import com.example.project_.markerhub.service.ManagerService;
@@ -20,6 +22,8 @@ import java.sql.Types;
 @Service
 public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> implements ManagerService {
 
+    @Autowired
+    ManagerService userService;
     @Autowired
     private JdbcTemplate jdbcTemplate;
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate){
@@ -86,5 +90,14 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
         Object[] args={id};
         int[] argTypes={Types.INTEGER};
         jdbcTemplate.update(sql,args,argTypes);
+    }
+    @Override
+    public List<Manager> getPageList(int pageNum,int pageSize) {
+        IPage<Manager> IPage = new Page<Manager>(pageNum, pageSize);
+        IPage<Manager> page = userService.page(IPage);
+        long total = page.getTotal();
+        System.out.println(total);
+        List<Manager> records = page.getRecords();
+        return records;
     }
 }
