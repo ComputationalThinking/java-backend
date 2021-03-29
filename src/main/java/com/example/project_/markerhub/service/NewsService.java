@@ -18,4 +18,6 @@ public interface NewsService extends IService<News> {
    void delete(Integer id);
    //查询
    List<News> conditionSearch(Integer sort,String title);
+
+    News searchById(Integer id);
 }

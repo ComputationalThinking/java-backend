@@ -93,6 +93,16 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements Ne
        return list;
    }
 
+   @Override
+   public News searchById(Integer id){
+        News news;
+        String sql = "select * from news where id=?";
+        Object[] args = {id};
+        int[] argTypes = {Types.INTEGER};
+        news = jdbcTemplate.queryForObject(sql,args,argTypes,new BeanPropertyRowMapper<>(News.class));
+        return news;
+   }
+
 }
 
 
