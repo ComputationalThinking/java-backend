@@ -4,20 +4,21 @@ package com.example.project_.markerhub.controller;
 import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/News")
 public class NewsController {
     @Autowired
-   private NewsService newsService;
+    private NewsService newsService;
 
     @GetMapping("/FindAll")
     public List<News> findAll(){
@@ -68,4 +69,37 @@ public class NewsController {
         List<News> list = newsService.conditionSearch(1,"%"+title+"%");
         return list;
    }
+    @GetMapping("/giveID")
+//    @PostMapping("/searchByID")
+    public News giveID(@RequestParam("id") Integer id){
+        News news;
+        news = newsService.searchById(id);
+        return news;
+   }
+
+    @GetMapping("/DeleteID")
+    public List<News> deleteID(@RequestParam("id") Integer id){
+        newsService.delete(id);
+        return findAll();
+    }
+
+    @RequestMapping(value = "/UpdataID",method = RequestMethod.POST,
+//            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
+            produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+//    @GetMapping("/UpdataID")
+    public void updateID(@RequestBody News news){
+//        News news=new News();
+        newsService.update(news);
+//        System.out.println(news);
+    }
+
+    @RequestMapping(value = "/AddID",method = RequestMethod.POST,
+//            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
+            produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+//    @GetMapping("/AddID")
+    public void InsertID(@RequestBody News news){
+        newsService.insert(news);
+    }
 }
