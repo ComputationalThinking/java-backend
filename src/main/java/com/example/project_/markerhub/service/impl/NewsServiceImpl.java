@@ -1,7 +1,12 @@
 package com.example.project_.markerhub.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.project_.common.lang.Result;
+import com.example.project_.markerhub.entity.Manager;
 import com.example.project_.markerhub.entity.News;
+import com.example.project_.markerhub.entity.PageData;
 import com.example.project_.markerhub.mapper.NewsMapper;
 import com.example.project_.markerhub.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +26,8 @@ import static jdk.nashorn.api.scripting.ScriptUtils.convert;
 
 @Service
 public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements NewsService {
+    @Autowired
+    NewsService newsService;
     @Autowired
     private JdbcTemplate jdbcTemplate;
     private BeanPropertyRowMapper<News> NewsMapper = new BeanPropertyRowMapper<>(News.class);
@@ -102,6 +109,15 @@ public class NewsServiceImpl extends ServiceImpl<NewsMapper, News> implements Ne
         news = jdbcTemplate.queryForObject(sql,args,argTypes,new BeanPropertyRowMapper<>(News.class));
         return news;
    }
+    @Override
+    public Result getPageList(int pageNum, int pageSize) {
+        IPage<News> IPage = new Page<>(pageNum, pageSize);
+        IPage<News> page =  newsService.page(IPage);
+        int total = (int) page.getTotal();
+        List<News> records = page.getRecords();
+        PageData<News> objectPageData = new PageData(total, records);
+        return Result.success(objectPageData);
+    }
 
 }
 

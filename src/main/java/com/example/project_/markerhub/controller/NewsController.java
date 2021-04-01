@@ -1,6 +1,7 @@
 package com.example.project_.markerhub.controller;
 
 
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,5 +102,11 @@ public class NewsController {
 //    @GetMapping("/AddID")
     public void InsertID(@RequestBody News news){
         newsService.insert(news);
+    }
+
+    //获取分页数据
+    @GetMapping("/getPageData")
+    public Result getPageList(@RequestParam int page, @RequestParam int limit) {
+        return newsService.getPageList(page, limit);
     }
 }

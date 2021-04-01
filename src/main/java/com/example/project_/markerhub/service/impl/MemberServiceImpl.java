@@ -1,7 +1,12 @@
 package com.example.project_.markerhub.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Achieve;
+import com.example.project_.markerhub.entity.Manager;
 import com.example.project_.markerhub.entity.Member;
+import com.example.project_.markerhub.entity.PageData;
 import com.example.project_.markerhub.mapper.MemberMapper;
 import com.example.project_.markerhub.service.MemberService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -18,7 +23,8 @@ import java.util.Map;
 
 @Service
 public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> implements MemberService {
-
+    @Autowired
+    MemberService memberService;
     @Autowired
     private JdbcTemplate jdbcTemplate;
     private BeanPropertyRowMapper<Member> MemberMapper = new BeanPropertyRowMapper<>(Member.class);
@@ -62,5 +68,14 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     public void delete(Member member){
         String sql="delete from member where id=?";
         jdbcTemplate.update(sql,member.getId());
+    }
+    @Override
+    public Result getPageList(int pageNum, int pageSize) {
+        IPage<Member> IPage = new Page<>(pageNum, pageSize);
+        IPage<Member> page = memberService.page(IPage);
+        int total = (int) page.getTotal();
+        List<Member> records = page.getRecords();
+        PageData<Member> objectPageData = new PageData(total, records);
+        return Result.success(objectPageData);
     }
 }

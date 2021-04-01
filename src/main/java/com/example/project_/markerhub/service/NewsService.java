@@ -1,5 +1,6 @@
 package com.example.project_.markerhub.service;
 
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.News;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.stereotype.Service;
@@ -20,4 +21,6 @@ public interface NewsService extends IService<News> {
    List<News> conditionSearch(Integer sort,String title);
 
     News searchById(Integer id);
+    //获取分页数据
+    Result getPageList(int pageNum, int pageSize);
 }

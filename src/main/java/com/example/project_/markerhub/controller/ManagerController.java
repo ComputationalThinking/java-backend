@@ -1,12 +1,18 @@
 package com.example.project_.markerhub.controller;
 
 
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Manager;
 import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.service.ManagerService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -49,7 +55,8 @@ public class ManagerController {
     }
     //获取分页数据
     @GetMapping("/getPageData")
-    public List<Manager> getPageList(@RequestParam int pageNum,@RequestParam int pageSize){
-        return userService.getPageList(pageNum,pageSize);
+    public Result getPageList(@RequestParam int page, @RequestParam int limit) {
+        return userService.getPageList(page, limit);
+
     }
 }
