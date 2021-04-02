@@ -1,11 +1,13 @@
 package com.example.project_.markerhub.controller;
 
 
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Achieve;
 import com.example.project_.markerhub.service.AchieveService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -56,5 +58,9 @@ public class AchieveController {
         achieve.setAchieveName("锦");
         achieve.setImg("sdasdfasf");
         achieveService.update(achieve);
+    }
+    @GetMapping("/getPageData")
+    public Result getPageList(@RequestParam int page, @RequestParam int limit) {
+        return achieveService.getPageList(page, limit);
     }
 }

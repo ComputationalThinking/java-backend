@@ -1,5 +1,6 @@
 package com.example.project_.markerhub.service;
 
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Manager;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -19,5 +20,5 @@ public interface ManagerService extends IService<Manager> {
     //删除数据
     void delete(Integer id);
     //获取分页数据
-    List<Manager> getPageList(int pageNum,int pageSize);
+    Result getPageList(int pageNum, int pageSize);
 }

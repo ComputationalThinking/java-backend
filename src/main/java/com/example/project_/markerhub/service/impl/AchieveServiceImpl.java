@@ -1,6 +1,11 @@
 package com.example.project_.markerhub.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Achieve;
+import com.example.project_.markerhub.entity.News;
+import com.example.project_.markerhub.entity.PageData;
 import com.example.project_.markerhub.mapper.AchieveMapper;
 import com.example.project_.markerhub.service.AchieveService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -14,7 +19,8 @@ import java.util.List;
 
 @Service
 public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> implements AchieveService {
-
+    @Autowired
+    AchieveService achieveService;
     @Autowired
     private JdbcTemplate jdbcTemplate;
     private BeanPropertyRowMapper<Achieve> AchieveMapper = new BeanPropertyRowMapper<>(Achieve.class);
@@ -56,5 +62,14 @@ public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> impl
         Object[] args={id};
         int[] argTypes={Types.INTEGER};
         jdbcTemplate.update(sql,args,argTypes);
+    }
+    @Override
+    public Result getPageList(int pageNum, int pageSize) {
+        IPage<Achieve> IPage = new Page<>(pageNum, pageSize);
+        IPage<Achieve> page =  achieveService.page(IPage);
+        int total = (int) page.getTotal();
+        List<Achieve> records = page.getRecords();
+        PageData<Achieve> objectPageData = new PageData(total, records);
+        return Result.success(objectPageData);
     }
 }

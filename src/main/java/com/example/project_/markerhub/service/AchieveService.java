@@ -1,5 +1,6 @@
 package com.example.project_.markerhub.service;
 
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Achieve;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -17,4 +18,5 @@ public interface AchieveService extends IService<Achieve> {
     void insert(Achieve achieve);
     //    删除数据
     void delete(Integer id);
+    Result getPageList(int pageNum, int pageSize);
 }
