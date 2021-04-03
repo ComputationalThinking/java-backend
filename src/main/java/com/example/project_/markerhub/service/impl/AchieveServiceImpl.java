@@ -37,10 +37,10 @@ public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> impl
 
     //根据条件查询  按标题查询
     @Override
-    public List<Achieve> findByCondition(String value){
-        String sql="SELECT * FROM achieve WHERE title LIKE '%' ? '%'";
-        Object[] args={value};
-        int[] argTypes={Types.VARCHAR};
+    public List<Achieve> findByCondition(String value,Integer sort){
+        String sql="SELECT * FROM achieve WHERE title LIKE '%' ? '%' AND sort = ?";
+        Object[] args={value,sort};
+        int[] argTypes={Types.VARCHAR,Types.INTEGER};
         return jdbcTemplate.query(sql,args,argTypes,AchieveMapper);
     }
     //更新数据
@@ -62,6 +62,16 @@ public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> impl
         Object[] args={id};
         int[] argTypes={Types.INTEGER};
         jdbcTemplate.update(sql,args,argTypes);
+    }
+
+    @Override
+    public Achieve searchById(Integer id){
+        Achieve achieve;
+        String sql = "select * from achieve where id=?";
+        Object[] args = {id};
+        int[] argTypes = {Types.INTEGER};
+        achieve = jdbcTemplate.queryForObject(sql,args,argTypes,AchieveMapper);
+        return achieve;
     }
     @Override
     public Result getPageList(int pageNum, int pageSize) {
