@@ -53,21 +53,21 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     //    //更新数据
     @Override
     public void update(Member member){
-        String sql ="UPDATE member set name=?,identity=?,content=?,tel=?,email=?,role=?,area=? ,img =? where id=?";
-        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea(),member.getImg(),member.getId());
+        String sql ="UPDATE member set name=?,identity=?,content=?,tel=?,email=?,role=?,area=? where id=?";
+        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea(),member.getId());
     }
     //    //添加数据
     @Override
     public void insert(Member member){
         //String sql="insert into member values ("+id+",'"+name+"',"+identity+",'"+content+"','"+tel+"','"+email+"',"+area+",'"+role+"')";
-        String sql="insert into member values (null,?,?,?,?,?,?,?,?)";
-        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea(),member.getImg());
+        String sql="insert into member values (null,?,?,?,?,?,?,?)";
+        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea());
     }
     //    //删除数据
     @Override
-    public void delete(Member member){
+    public void delete(Integer id){
         String sql="delete from member where id=?";
-        jdbcTemplate.update(sql,member.getId());
+        jdbcTemplate.update(sql,id);
     }
     @Override
     public Result getPageList(int pageNum, int pageSize) {
@@ -77,5 +77,23 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         List<Member> records = page.getRecords();
         PageData<Member> objectPageData = new PageData(total, records);
         return Result.success(objectPageData);
+    }
+    @Override
+    public Member searchById(Integer id){
+        Member member;
+        String sql = "select * from member where id=?";
+        Object[] args = {id};
+        int [] argTypes = {Types.INTEGER};
+        member = jdbcTemplate.queryForObject(sql,args,argTypes,new BeanPropertyRowMapper<>(Member.class));
+        return member;
+    }
+    @Override
+    public List<Member> conditionSearch(String name){
+        List<Member> list;
+        String sql="select * from member where name like ?";
+        Object[] args = {name};
+        int[] argTypes={Types.VARCHAR};
+        list = jdbcTemplate.query(sql,args,argTypes,new BeanPropertyRowMapper<>(Member.class));
+        return list;
     }
 }
