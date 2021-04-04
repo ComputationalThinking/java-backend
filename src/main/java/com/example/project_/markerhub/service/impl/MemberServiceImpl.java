@@ -53,15 +53,15 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     //    //更新数据
     @Override
     public void update(Member member){
-        String sql ="UPDATE member set name=?,identity=?,content=?,tel=?,email=?,role=?,area=? where id=?";
-        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea(),member.getId());
+        String sql ="UPDATE member set name=?,identity=?,content=?,tel=?,email=?,role=?,area=?,img=? where id=?";
+        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea(),member.getImg(),member.getId());
     }
     //    //添加数据
     @Override
     public void insert(Member member){
         //String sql="insert into member values ("+id+",'"+name+"',"+identity+",'"+content+"','"+tel+"','"+email+"',"+area+",'"+role+"')";
-        String sql="insert into member values (null,?,?,?,?,?,?,?)";
-        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea());
+        String sql="insert into member values (null,?,?,?,?,?,?,?,?)";
+        jdbcTemplate.update(sql,member.getName(),member.getIdentity(),member.getContent(),member.getTel(),member.getEmail(),member.getRole(),member.getArea(),member.getImg());
     }
     //    //删除数据
     @Override
