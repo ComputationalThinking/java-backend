@@ -38,7 +38,7 @@ public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> impl
     //根据条件查询  按标题查询
     @Override
     public List<Achieve> findByCondition(String value,Integer sort){
-        String sql="SELECT * FROM achieve WHERE title LIKE ? AND sort = ?";
+        String sql="SELECT * FROM achieve WHERE title LIKE '%' ? '%' AND sort = ?";
         Object[] args={value,sort};
         int[] argTypes={Types.VARCHAR,Types.INTEGER};
         return jdbcTemplate.query(sql,args,argTypes,AchieveMapper);
@@ -46,7 +46,7 @@ public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> impl
     //更新数据
     @Override
     public void update(Achieve achieve){
-        String sql ="UPDATE achieve SET title =?,content =?,time =?,hot =?,participant_member =?,sort =?,achieve_name =?,img =? WHERE id =?";
+        String sql ="update achieve set title =?,content =?,time =?,hot =?,participant_member =?,sort =?,achieve_name =?,img =? where id =?";
         jdbcTemplate.update(sql,achieve.getTitle(),achieve.getContent(),achieve.getTime(),achieve.getHot(),achieve.getParticipantMember(),achieve.getSort(),achieve.getAchieveName(),achieve.getImg(),achieve.getId());
     }
     //添加数据

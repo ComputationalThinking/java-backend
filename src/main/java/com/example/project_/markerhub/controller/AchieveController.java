@@ -85,6 +85,7 @@ public class AchieveController {
     public void insertID(@RequestBody Achieve achieve){
         achieveService.insert(achieve);
     }
+
     @GetMapping("/getPageData")
     public Result getPageList(@RequestParam int page, @RequestParam int limit) {
         return achieveService.getPageList(page, limit);
