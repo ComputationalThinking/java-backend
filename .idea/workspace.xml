@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f2a4ac8-de2f-4c39-a80b-187a9a113b43" name="默认" comment="detail">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,25 +27,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2730">
-              <caret line="102" column="33" lean-forward="false" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+            <state relative-caret-position="30">
+              <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding>
                 <element signature="e#3261#3262#0" expanded="true" />
                 <element signature="e#3301#3302#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/ManagerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="48" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -61,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewsServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/NewsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+            <state relative-caret-position="2460">
+              <caret line="101" column="43" lean-forward="false" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
               <folding>
                 <marker date="1616899131551" expanded="true" signature="1403:1421" ph="select * fro... news" />
                 <marker date="1616899131551" expanded="true" signature="1551:1642" ph="UPDATE news... " />
@@ -79,21 +68,43 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AchieveServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/AchieveServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+              <folding>
+                <marker date="1616395526368" expanded="true" signature="1045:1066" ph="select * fro... achieve" />
+                <marker date="1616395526368" expanded="true" signature="1203:1251" ph="SELECT * FRO... achieve" />
+                <marker date="1616395526368" expanded="true" signature="1486:1603" ph="UPDATE achieve... " />
+                <marker date="1616395526368" expanded="true" signature="1914:1962" ph="insert into achieve... " />
+                <marker date="1616395526368" expanded="true" signature="2253:2284" ph="delete from achieve... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemberServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <marker date="1616396333432" expanded="true" signature="1336:1356" ph="select * fro... member" />
+                <marker date="1616396333432" expanded="true" signature="1752:1844" ph="UPDATE member... " />
+                <marker date="1616396333432" expanded="true" signature="2273:2321" ph="insert into member... " />
+                <marker date="1616396333432" expanded="true" signature="2596:2625" ph="delete from member... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ManagerServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/ManagerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-              <folding>
-                <marker date="1616758171173" expanded="true" signature="1251:1272" ph="select * fro... manager" />
-                <marker date="1616758171173" expanded="true" signature="1559:1597" ph="select * fro... manager" />
-                <marker date="1616758171173" expanded="true" signature="1675:1713" ph="select * fro... manager" />
-                <marker date="1616758171173" expanded="true" signature="2065:2105" ph="UPDATE manager... " />
-                <marker date="1616758171173" expanded="true" signature="2183:2223" ph="UPDATE manager... " />
-                <marker date="1616758171173" expanded="true" signature="2504:2561" ph="update manager... " />
-                <marker date="1616758171173" expanded="true" signature="2855:2892" ph="insert into manager... " />
-                <marker date="1616758171173" expanded="true" signature="3127:3159" ph="delete from manager... " />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,8 +166,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="913" />
     <option name="width" value="937" />
     <option name="height" value="1088" />
   </component>
@@ -176,10 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,6 +267,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project_" type="462c0819:PsiDirectoryNode" />
               <item name="markerhub" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project_" type="462c0819:PsiDirectoryNode" />
+              <item name="markerhub" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -276,6 +294,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,6 +548,8 @@
       <workItem from="1616895669189" duration="9855000" />
       <workItem from="1616999332278" duration="6646000" />
       <workItem from="1617016372916" duration="341000" />
+      <workItem from="1617944522384" duration="1180000" />
+      <workItem from="1618654561442" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="detail">
       <created>1615990442780</created>
@@ -576,7 +598,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29900000" />
+    <option name="totallyTimeSpent" value="31488000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,13 +619,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调色板" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26763716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27547592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="设计器" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -657,6 +679,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/ManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -704,16 +750,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <marker date="1616758171173" expanded="true" signature="1251:1272" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="1559:1597" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="1675:1713" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="2065:2105" ph="UPDATE manager... " />
-            <marker date="1616758171173" expanded="true" signature="2183:2223" ph="UPDATE manager... " />
-            <marker date="1616758171173" expanded="true" signature="2504:2561" ph="update manager... " />
-            <marker date="1616758171173" expanded="true" signature="2855:2892" ph="insert into manager... " />
-            <marker date="1616758171173" expanded="true" signature="3127:3159" ph="delete from manager... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -756,16 +793,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <marker date="1616758171173" expanded="true" signature="1251:1272" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="1559:1597" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="1675:1713" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="2065:2105" ph="UPDATE manager... " />
-            <marker date="1616758171173" expanded="true" signature="2183:2223" ph="UPDATE manager... " />
-            <marker date="1616758171173" expanded="true" signature="2504:2561" ph="update manager... " />
-            <marker date="1616758171173" expanded="true" signature="2855:2892" ph="insert into manager... " />
-            <marker date="1616758171173" expanded="true" signature="3127:3159" ph="delete from manager... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -819,12 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <marker date="1616206456713" expanded="true" signature="925:947" ph="select * fro... carousel" />
-            <marker date="1616206456713" expanded="true" signature="1089:1126" ph="insert into carousel... " />
-            <marker date="1616206456713" expanded="true" signature="1287:1319" ph="delete from carousel... " />
-            <marker date="1616206456713" expanded="true" signature="1453:1502" ph="update carousel... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,10 +858,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/CarouselController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <marker date="1616396333432" expanded="true" signature="1336:1356" ph="select * fro... member" />
+            <marker date="1616396333432" expanded="true" signature="1752:1844" ph="UPDATE member... " />
+            <marker date="1616396333432" expanded="true" signature="2273:2321" ph="insert into member... " />
+            <marker date="1616396333432" expanded="true" signature="2596:2625" ph="delete from member... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/AchieveServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+          <folding>
+            <marker date="1616395526368" expanded="true" signature="1045:1066" ph="select * fro... achieve" />
+            <marker date="1616395526368" expanded="true" signature="1203:1251" ph="SELECT * FRO... achieve" />
+            <marker date="1616395526368" expanded="true" signature="1486:1603" ph="UPDATE achieve... " />
+            <marker date="1616395526368" expanded="true" signature="1914:1962" ph="insert into achieve... " />
+            <marker date="1616395526368" expanded="true" signature="2253:2284" ph="delete from achieve... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/ManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/NewsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2460">
+          <caret line="101" column="43" lean-forward="false" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
+          <folding>
+            <marker date="1616899131551" expanded="true" signature="1403:1421" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="1551:1642" ph="UPDATE news... " />
+            <marker date="1616899131551" expanded="true" signature="1894:1938" ph="insert into news... " />
+            <marker date="1616899131551" expanded="true" signature="2178:2205" ph="delete from news... " />
+            <marker date="1616899131551" expanded="true" signature="3282:3307" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="3282:3330" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="3678:3707" ph="select * fro... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="102" column="33" lean-forward="false" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+        <state relative-caret-position="1500">
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding>
             <element signature="e#3261#3262#0" expanded="true" />
             <element signature="e#3301#3302#0" expanded="true" />
@@ -849,7 +938,170 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/ManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3301#3302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/CarouselController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/NewsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+          <folding>
+            <marker date="1616899131551" expanded="true" signature="1403:1421" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="1551:1642" ph="UPDATE news... " />
+            <marker date="1616899131551" expanded="true" signature="1894:1938" ph="insert into news... " />
+            <marker date="1616899131551" expanded="true" signature="2178:2205" ph="delete from news... " />
+            <marker date="1616899131551" expanded="true" signature="3282:3307" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="3282:3330" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="3678:3707" ph="select * fro... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/ManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3301#3302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/NewsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="90" column="50" lean-forward="false" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+          <folding>
+            <marker date="1616899131551" expanded="true" signature="1403:1421" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="1551:1642" ph="UPDATE news... " />
+            <marker date="1616899131551" expanded="true" signature="1894:1938" ph="insert into news... " />
+            <marker date="1616899131551" expanded="true" signature="2178:2205" ph="delete from news... " />
+            <marker date="1616899131551" expanded="true" signature="3282:3307" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="3282:3330" ph="select * fro... news" />
+            <marker date="1616899131551" expanded="true" signature="3678:3707" ph="select * fro... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/ManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/AchieveController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="51" column="61" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/Achieve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/CarouselServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/config/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
           <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="48" />
           <folding />
         </state>
@@ -865,18 +1117,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/ManagerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <marker date="1616758171173" expanded="true" signature="1251:1272" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="1559:1597" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="1675:1713" ph="select * fro... manager" />
-            <marker date="1616758171173" expanded="true" signature="2065:2105" ph="UPDATE manager... " />
-            <marker date="1616758171173" expanded="true" signature="2183:2223" ph="UPDATE manager... " />
-            <marker date="1616758171173" expanded="true" signature="2504:2561" ph="update manager... " />
-            <marker date="1616758171173" expanded="true" signature="2855:2892" ph="insert into manager... " />
-            <marker date="1616758171173" expanded="true" signature="3127:3159" ph="delete from manager... " />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -890,8 +1133,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/NewsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        <state relative-caret-position="2460">
+          <caret line="101" column="43" lean-forward="false" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
           <folding>
             <marker date="1616899131551" expanded="true" signature="1403:1421" ph="select * fro... news" />
             <marker date="1616899131551" expanded="true" signature="1551:1642" ph="UPDATE news... " />
@@ -900,6 +1143,17 @@
             <marker date="1616899131551" expanded="true" signature="3282:3307" ph="select * fro... news" />
             <marker date="1616899131551" expanded="true" signature="3282:3330" ph="select * fro... news" />
             <marker date="1616899131551" expanded="true" signature="3678:3707" ph="select * fro... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3301#3302#0" expanded="true" />
           </folding>
         </state>
       </provider>
