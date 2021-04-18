@@ -1,12 +1,14 @@
 package com.example.project_.markerhub.controller;
 
 
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Achieve;
+import com.example.project_.markerhub.entity.News;
 import com.example.project_.markerhub.service.AchieveService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -23,26 +25,26 @@ public class AchieveController {
     }
     @GetMapping("/getdatacondition")
     public List<Achieve> getDataCondition(){
-        List<Achieve> list = achieveService.findByCondition("真实");
+        List<Achieve> list = achieveService.findByCondition("真实",1);
         return list;
     }
-//    @GetMapping("/delete")//按id号删除数据
-//    public void delete(){
-//        achieveService.delete(4);
-//    }
+    @GetMapping("/delete")//按id号删除数据
+    public void delete(){
+        achieveService.delete(4);
+    }
 
-    //    @GetMapping("/insert")
-//    public void insert(){//增加数据
-//        Achieve achieve = new Achieve();
-//        achieve.setTitle("欧洲锦标冠军");
-//        achieve.setContent("获得国际锦标赛的第一名");
-//        achieve.setTime(LocalDateTime.of(2021,12,12,10,11,12));
-//        achieve.setHot(1);
-//        achieve.setParticipantMember("超级英雄");
-//        achieve.setSort(0);
-//        achieve.setAchieveName("锦标赛");
-//        achieveService.insert(achieve);
-//    }
+    @GetMapping("/insert")
+    public void insert(){//增加数据
+        Achieve achieve = new Achieve();
+        achieve.setTitle("欧洲锦标冠军");
+        achieve.setContent("获得国际锦标赛的第一名");
+        achieve.setTime(LocalDateTime.of(2021,12,12,10,11,12));
+        achieve.setHot(1);
+        achieve.setParticipantMember("超级英雄");
+        achieve.setSort(0);
+        achieve.setAchieveName("锦标赛");
+        achieveService.insert(achieve);
+    }
     @GetMapping("/update")
     public void update(){//修改数据
         Achieve achieve = new Achieve();
@@ -56,5 +58,36 @@ public class AchieveController {
         achieve.setAchieveName("锦");
         achieve.setImg("sdasdfasf");
         achieveService.update(achieve);
+    }
+    @GetMapping("/giveID")
+    public Achieve giveID(@RequestParam("id") Integer id){
+        Achieve achieve;
+        achieve = achieveService.searchById(id);
+        return achieve;
+    }
+
+    @GetMapping("/deleteID")//按id号删除数据
+    public List<Achieve> deleteID(@RequestParam("id") Integer id){
+        achieveService.delete(id);
+        return getData();
+    }
+
+    @RequestMapping(value = "/updataID",method = RequestMethod.POST,
+            produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public void updateID(@RequestBody Achieve achieve){
+        achieveService.update(achieve);
+    }
+
+    @RequestMapping(value = "/insertID",method = RequestMethod.POST,
+            produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public void insertID(@RequestBody Achieve achieve){
+        achieveService.insert(achieve);
+    }
+
+    @GetMapping("/getPageData")
+    public Result getPageList(@RequestParam int page, @RequestParam int limit) {
+        return achieveService.getPageList(page, limit);
     }
 }

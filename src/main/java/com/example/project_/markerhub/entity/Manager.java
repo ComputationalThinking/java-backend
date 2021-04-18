@@ -35,25 +35,5 @@ public class Manager implements Serializable {
 //        this.password = password;
 //    }
 
-    public Integer getId() {
-        return id;
-    }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return username;
-    }
-
-    public void setName(String name) { this.username=name; }
 }

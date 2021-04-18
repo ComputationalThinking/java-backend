@@ -40,6 +40,4 @@ public class Member implements Serializable {
     private String role;
 
     private String img;
-
-
 }

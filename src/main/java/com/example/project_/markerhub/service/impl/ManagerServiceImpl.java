@@ -3,7 +3,9 @@ package com.example.project_.markerhub.service.impl;
 import com.alibaba.druid.mock.MockConnection;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.project_.common.lang.Result;
 import com.example.project_.markerhub.entity.Manager;
+import com.example.project_.markerhub.entity.PageData;
 import com.example.project_.markerhub.mapper.ManagerMapper;
 import com.example.project_.markerhub.service.ManagerService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -92,12 +94,12 @@ public class ManagerServiceImpl extends ServiceImpl<ManagerMapper, Manager> impl
         jdbcTemplate.update(sql,args,argTypes);
     }
     @Override
-    public List<Manager> getPageList(int pageNum,int pageSize) {
-        IPage<Manager> IPage = new Page<Manager>(pageNum, pageSize);
+    public Result getPageList(int pageNum,int pageSize) {
+        IPage<Manager> IPage = new Page<>(pageNum, pageSize);
         IPage<Manager> page = userService.page(IPage);
-        long total = page.getTotal();
-        System.out.println(total);
+        int total = (int) page.getTotal();
         List<Manager> records = page.getRecords();
-        return records;
+        PageData<Manager> objectPageData = new PageData(total, records);
+        return Result.success(objectPageData);
     }
 }
