@@ -25,8 +25,8 @@ public class MemberController {
         return list;
     }
     @GetMapping("/memberFindByCondition")
-    public List<Object> findByCondition(){
-        List<Object> list =userService.findByCondition("identity","1");
+    public List<Object> findByCondition(@RequestParam String attribute,@RequestParam String key){
+        List<Object> list =userService.findByCondition(attribute,key);
         return list;
     }
     @GetMapping("/memberUpdate")
@@ -64,8 +64,7 @@ public class MemberController {
         userService.insert(member);
     }
     @GetMapping("/memberSearch")
-    public List<Member> search(){
-        String name = "";
+    public List<Member> search(@RequestParam String name){
         List<Member> list = userService.conditionSearch("%"+name+"%");
         return list;
     }
