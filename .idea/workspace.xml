@@ -7,8 +7,12 @@
     <list default="true" id="0f2a4ac8-de2f-4c39-a80b-187a9a113b43" name="默认" comment="detail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/MemberServiceImpl.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,6 +245,7 @@
       <workItem from="1617495852261" duration="2694000" />
       <workItem from="1617506468020" duration="612000" />
       <workItem from="1617507764578" duration="421000" />
+      <workItem from="1618810793427" duration="5188000" />
     </task>
     <task id="LOCAL-00001" summary="detail">
       <created>1615990442780</created>
@@ -284,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617495575032</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="detail">
+      <created>1618763910862</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618763910862</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -296,7 +308,7 @@
     </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

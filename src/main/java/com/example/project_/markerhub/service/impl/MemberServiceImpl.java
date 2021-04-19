@@ -45,7 +45,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
 
     //根据条件查询
     @Override
-    public List<Object> findByCondition(String attribute,String key){
+    public List<Member> findByCondition(String attribute,String key){
         String sql="SELECT * FROM  member"+" WHERE "+ attribute +" LIKE '%"+key+"%'";
         List message = getMapper(sql);
         return message;
