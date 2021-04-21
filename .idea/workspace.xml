@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2a4ac8-de2f-4c39-a80b-187a9a113b43" name="默认" comment="detail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/MemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/AchieveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/AchieveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/AchieveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/AchieveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/AchieveServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/AchieveServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/MemberService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -245,7 +244,9 @@
       <workItem from="1617495852261" duration="2694000" />
       <workItem from="1617506468020" duration="612000" />
       <workItem from="1617507764578" duration="421000" />
-      <workItem from="1618810793427" duration="5188000" />
+      <workItem from="1618810793427" duration="5287000" />
+      <workItem from="1618823444294" duration="715000" />
+      <workItem from="1618994627064" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="detail">
       <created>1615990442780</created>
@@ -296,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618763910862</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="detail">
+      <created>1618823012629</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618823012629</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">

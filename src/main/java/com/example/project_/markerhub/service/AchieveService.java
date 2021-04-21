@@ -11,7 +11,8 @@ public interface AchieveService extends IService<Achieve> {
     //查询所有
     List<Achieve> findALL();
     //查询单个
-    List<Achieve> findByCondition(String value,Integer sort);
+    List<Achieve> findByCondition(Integer key);
+    List<Achieve> findByTitle(String value);
     //    添加数据
     void update(Achieve achieve);
     //    修改数据
