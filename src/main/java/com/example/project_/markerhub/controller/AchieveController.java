@@ -29,7 +29,7 @@ public class AchieveController {
         achieveService.delete(4);
     }
 
-//    @GetMapping("/insert")
+    //    @GetMapping("/insert")
 //    public void insert(){//增加数据
 //        Achieve achieve = new Achieve();
 //        achieve.setTitle("欧洲锦标冠军");
