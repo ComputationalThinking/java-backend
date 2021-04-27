@@ -49,8 +49,8 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
     //添加
     @Override
     public void insert(Carousel carousel){
-        String sql = "insert into carousel values(null,?,?)";
-        jdbcTemplate.update(sql,carousel.getPic(),carousel.getPage());
+        String sql = "insert into carousel values(null,?,?,?)";
+        jdbcTemplate.update(sql,carousel.getPic(),carousel.getPage(),carousel.getContent());
     }
     //删除
     @Override
@@ -61,8 +61,8 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
     //更新
     @Override
     public void update(Carousel carousel){
-        String sql = "update carousel set pic = ?,page = ? where id = ?";
-        jdbcTemplate.update(sql,carousel.getPic(),carousel.getPage(),carousel.getId());
+        String sql = "update carousel set pic = ?,page = ?,content = ? where id = ?";
+        jdbcTemplate.update(sql,carousel.getPic(),carousel.getPage(),carousel.getContent(),carousel.getId());
     }
     
     public List<Carousel> setList(final List<Map<String, Object>> srcList, Class<Carousel> clazz) {

@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2a4ac8-de2f-4c39-a80b-187a9a113b43" name="默认" comment="detail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/AchieveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/AchieveController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/AchieveService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/AchieveService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/AchieveServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/AchieveServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/CarouselController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/controller/CarouselController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/Carousel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/entity/Carousel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/CarouselServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_/markerhub/service/impl/CarouselServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/CarouselController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/controller/CarouselController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/CarouselServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_/markerhub/service/impl/CarouselServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -247,7 +249,7 @@
       <workItem from="1618823444294" duration="715000" />
       <workItem from="1618994627064" duration="204000" />
       <workItem from="1619152097553" duration="3933000" />
-      <workItem from="1619534529505" duration="1958000" />
+      <workItem from="1619534529505" duration="6557000" />
     </task>
     <task id="LOCAL-00001" summary="detail">
       <created>1615990442780</created>
@@ -312,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618994748478</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="detail">
+      <created>1619537155084</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1619537155084</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">

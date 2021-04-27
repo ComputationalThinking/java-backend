@@ -20,6 +20,8 @@ public class Carousel implements Serializable {
 
     private String pic;
 
+    private String content;
+
     private Integer page;
     public Integer getId() {
         return id;

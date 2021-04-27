@@ -16,11 +16,12 @@ import java.util.List;
 @RequestMapping("/carousel")
 public class CarouselController {
     @Autowired
-    private CarouselService carouselService;
+    CarouselService carouselService;
 
-    @GetMapping("/findeall")
-    public List<Carousel> findALL(){
-        return carouselService.findALL();
+    @GetMapping("/findall")
+    public List<Carousel> findAll(){
+        List<Carousel> list=carouselService.findALL();
+        return list;
     }
 
     @GetMapping("/insert")
@@ -28,6 +29,7 @@ public class CarouselController {
         Carousel carousel = new Carousel();
         carousel.setPage(2);
         carousel.setPic("adsdsdsdasd");
+        carousel.setContent("adsd");
         carouselService.insert(carousel);
     }
 
@@ -37,6 +39,7 @@ public class CarouselController {
         carousel.setPage(2);
         carousel.setPic("我是路径");
         carousel.setId(1);
+        carousel.setContent("我是描述");
         carouselService.update(carousel);
     }
 
@@ -48,27 +51,27 @@ public class CarouselController {
         carouselService.delete(1);
     }
     @GetMapping("/giveID")
-//    @PostMapping("/searchByID")
     public Carousel giveID(@RequestParam("id") Integer id){
         Carousel carousel;
         carousel = carouselService.searchById(id);
         return carousel;
     }
 
-//    @GetMapping("/DeleteID")
-//    public List<Carousel> deleteID(@RequestParam("id") Integer id){
-//        carouselService.delete(id);
-////        return findAll();
-//    }
+    @GetMapping("/DeleteID")
+    public List<Carousel> deleteID(@RequestParam("id") Integer id){
+        carouselService.delete(id);
+        return findAll();
+    }
+
+    @RequestMapping(value = "UpdataID",method = RequestMethod.POST,
+            produces={MediaType.APPLICATION_ATOM_XML_VALUE,MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public void updateID(@RequestBody Carousel carousel){carouselService.update(carousel);}
 
     @RequestMapping(value = "/AddID",method = RequestMethod.POST,
-//            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
             produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-//    @GetMapping("/AddID")
-    public void InsertID(@RequestBody Carousel carousel){
-        carouselService.insert(carousel);
-    }
+    public void InsertID(@RequestBody Carousel carousel){carouselService.insert(carousel);}
 
     //获取分页数据
     @GetMapping("/getPageData")
