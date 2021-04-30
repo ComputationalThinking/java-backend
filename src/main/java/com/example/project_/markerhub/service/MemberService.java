@@ -12,7 +12,7 @@ public interface MemberService extends IService<Member> {
     //查询所有
     List<Member> findAll();
     //查询单个
-    List<Object> findByCondition(String attribute,String key);
+    List<Member> findByCondition(String attribute,String key);
     //    添加数据
     void insert(Member member);
     //    修改数据

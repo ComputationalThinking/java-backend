@@ -23,42 +23,38 @@ public class AchieveController {
         List<Achieve> list = achieveService.findALL();
         return list;
     }
-    @GetMapping("/getdatacondition")
-    public List<Achieve> getDataCondition(){
-        List<Achieve> list = achieveService.findByCondition("真实",1);
-        return list;
-    }
+
     @GetMapping("/delete")//按id号删除数据
     public void delete(){
         achieveService.delete(4);
     }
 
-    @GetMapping("/insert")
-    public void insert(){//增加数据
-        Achieve achieve = new Achieve();
-        achieve.setTitle("欧洲锦标冠军");
-        achieve.setContent("获得国际锦标赛的第一名");
-        achieve.setTime(LocalDateTime.of(2021,12,12,10,11,12));
-        achieve.setHot(1);
-        achieve.setParticipantMember("超级英雄");
-        achieve.setSort(0);
-        achieve.setAchieveName("锦标赛");
-        achieveService.insert(achieve);
-    }
-    @GetMapping("/update")
-    public void update(){//修改数据
-        Achieve achieve = new Achieve();
-        achieve.setId(1);
-        achieve.setTitle("欧");
-        achieve.setContent("获");
-        achieve.setTime(LocalDateTime.of(2021,12,12,10,11,12));
-        achieve.setHot(1);
-        achieve.setParticipantMember("超");
-        achieve.setSort(0);
-        achieve.setAchieveName("锦");
-        achieve.setImg("sdasdfasf");
-        achieveService.update(achieve);
-    }
+    //    @GetMapping("/insert")
+//    public void insert(){//增加数据
+//        Achieve achieve = new Achieve();
+//        achieve.setTitle("欧洲锦标冠军");
+//        achieve.setContent("获得国际锦标赛的第一名");
+//        achieve.setTime(LocalDateTime.of(2021, 12, 12, 10, 11, 12));
+//        achieve.setHot(1);
+//        achieve.setParticipantMember("超级英雄");
+//        achieve.setSort(0);
+//        achieve.setAchieveName("锦标赛");
+//        achieveService.insert(achieve);
+//    }
+//    @GetMapping("/update")
+//    public void update(){//修改数据
+//        Achieve achieve = new Achieve();
+//        achieve.setId(1);
+//        achieve.setTitle("欧");
+//        achieve.setContent("获");
+//        achieve.setTime(LocalDateTime.of(2021,12,12,10,11,12));
+//        achieve.setHot(1);
+//        achieve.setParticipantMember("超");
+//        achieve.setSort(0);
+//        achieve.setAchieveName("锦");
+//        achieve.setImg("sdasdfasf");
+//        achieveService.update(achieve);
+//    }
     @GetMapping("/giveID")
     public Achieve giveID(@RequestParam("id") Integer id){
         Achieve achieve;
@@ -71,7 +67,21 @@ public class AchieveController {
         achieveService.delete(id);
         return getData();
     }
-
+    @GetMapping("/getdata2")
+    public List<Achieve> getdata2(){
+        List<Achieve> list = achieveService.findByTitle("真实");
+        return list;
+    }
+    @GetMapping("/getDataBySort")
+    public List<Achieve> getDataBySort(@RequestParam Integer sort){
+        List<Achieve> list = achieveService.findByCondition(sort);
+        return list;
+    }
+    @GetMapping("/getDataByTitle")
+    public List<Achieve> getDataByTitle(@RequestParam String title){
+        List<Achieve> list = achieveService.findByTitle(title);
+        return list;
+    }
     @RequestMapping(value = "/updataID",method = RequestMethod.POST,
             produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
