@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.sql.Types;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -43,10 +44,15 @@ public class AchieveServiceImpl extends ServiceImpl<AchieveMapper, Achieve> impl
     //根据条件查询  按标题查询
     @Override
     public List<Achieve> findByCondition(Integer key){
+        List<Achieve> list1,list2;
         String sql="SELECT * FROM achieve WHERE sort = ?";
         Object[] args={key};
         int[] argTypes={Types.INTEGER};
-        return jdbcTemplate.query(sql,args,argTypes,AchieveMapper);
+        list1 = jdbcTemplate.query(sql,args,argTypes,AchieveMapper);
+        list2=list1;
+        list2=list2.subList(0,list2.size());
+        Collections.reverse(list2);
+        return list2;
     }
     //根据条件查询  按标题查询
     @Override

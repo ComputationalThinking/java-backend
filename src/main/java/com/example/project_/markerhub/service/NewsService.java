@@ -12,17 +12,15 @@ public interface NewsService extends IService<News> {
     //查询单个
 //    List<News> findByCondition(String attribute,String key);
     //    添加数据
-   void insert(News news);
-   //    修改数据
-   void update(News news);
-   //    删除数据
-   void delete(Integer id);
-   //查询
-   List<News> conditionSearch(Integer sort,String title);
-
+    void insert(News news);
+    //    修改数据
+    void update(News news);
+    //    删除数据
+    void delete(Integer id);
+    //查询
+    List<News> conditionSearch(Integer sort,String title);
+    List<News> conditionSearchBySort(Integer sort,Integer length);
     News searchById(Integer id);
     //获取分页数据
     Result getPageList(int pageNum, int pageSize);
-
-    Result getPageListSort(int pageNum, int pageSize,String sort,String title);
 }
