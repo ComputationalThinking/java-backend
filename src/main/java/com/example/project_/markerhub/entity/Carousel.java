@@ -45,4 +45,12 @@ public class Carousel implements Serializable {
     public void setPage(Integer page) {
         this.page = page;
     }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 }

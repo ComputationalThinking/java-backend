@@ -105,7 +105,11 @@ public class CarouselController {
         }
         url = "\\src\\main\\java\\com\\example\\project_\\markerhub\\Image" + name + "." + fileName1;
     }
-
+    @GetMapping("/getDataByPage")
+    public List<Carousel> getDataByPage(@RequestParam Integer key){
+        List<Carousel> list = carouselService.findByCondition(key);
+        return list;
+    }
     //获取分页数据
     @GetMapping("/getPageData")
     @ResponseBody

@@ -99,6 +99,14 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
     }
 
     @Override
+    public List<Carousel> findByCondition(Integer key){
+        List<Carousel> list1;
+        String sql="SELECT * FROM carousel WHERE page = ?";
+        Object[] args={key};
+        int[] argTypes={Types.INTEGER};
+        return jdbcTemplate.query(sql,args,argTypes,CarouselMapper);
+    }
+    @Override
     public Result getPageList(int pageNum, int pageSize) {
         IPage<Carousel> IPage = new Page<>(pageNum, pageSize);
         IPage<Carousel> page = carouselService.page(IPage);

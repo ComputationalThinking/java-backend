@@ -22,7 +22,7 @@ public interface CarouselService extends IService<Carousel> {
     //修改
     void update(Carousel carousel);
 //    List<Carousel> conditionSearch(String name);
-
+    List<Carousel> findByCondition(Integer key);
     Carousel searchById(Integer id);
     //获取分页数据
     Result getPageList(int pageNum, int pageSize);
