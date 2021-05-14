@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 import java.lang.reflect.Field;
 import java.sql.Types;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -100,11 +101,15 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
 
     @Override
     public List<Carousel> findByCondition(Integer key){
-        List<Carousel> list1;
+        List<Carousel> list1,list2;
         String sql="SELECT * FROM carousel WHERE page = ?";
         Object[] args={key};
         int[] argTypes={Types.INTEGER};
-        return jdbcTemplate.query(sql,args,argTypes,CarouselMapper);
+        list1 = jdbcTemplate.query(sql,args,argTypes,CarouselMapper);
+        list2=list1;
+        list2=list2.subList(list2.size()-4,list2.size());
+        Collections.reverse(list2);
+        return list2;
     }
     @Override
     public Result getPageList(int pageNum, int pageSize) {
